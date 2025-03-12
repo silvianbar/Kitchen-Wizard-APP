@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Recipes"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#D4F0F0"
+    android:backgroundTint="#d4f0f0"
+    tools:context="com.example.kitchenactivity.Activity.RecipeDetailsActivity">
+
+    <ImageView
+        android:id="@+id/pozafundal"
+        android:layout_width="546dp"
+        android:layout_height="801dp"
+        android:alpha="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/legumelacuptor" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/recipeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="100dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:fontFamily="@font/arizonia"
+                android:text="@string/legume_la_cuptor"
+                android:textAlignment="center"
+
+                android:textColor="#000000"
+                android:textSize="70sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageMic"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                app:layout_constraintTop_toBottomOf="@id/recipeName"
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingLeft="10dp"
+                app:srcCompat="@drawable/legumelacuptor" />
+
+            <TextView
+                android:id="@+id/recipeDifficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/imageMic"
+                app:layout_constraintTop_toTopOf="@id/imageMic"
+                android:paddingTop="10dp"
+                android:fontFamily="@font/aladin"
+                android:text="Dificultatea:"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/stea1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/recipeDifficulty"
+                app:layout_constraintTop_toTopOf="@id/recipeDifficulty"
+                android:paddingTop="-5dp"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+            <ImageView
+                android:id="@+id/stea2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/recipeDifficulty"
+                app:layout_constraintTop_toTopOf="@id/recipeDifficulty"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:visibility="visible"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+            <ImageView
+                android:id="@+id/stea3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="25dp"
+
+                app:layout_constraintStart_toEndOf="@id/recipeDifficulty"
+                app:layout_constraintTop_toTopOf="@id/recipeDifficulty"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+            <ImageView
+                android:id="@+id/fundal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:alpha="0.8"
+                app:layout_constraintBottom_toBottomOf="@id/stea3"
+                app:layout_constraintStart_toEndOf="@id/stea3"
+                app:layout_constraintTop_toTopOf="@id/imageMic"
+
+                app:srcCompat="@drawable/portocaliu" />
+
+            <TextView
+                android:id="@+id/recipeCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aladin"
+                android:text="Kcal:\n112"
+                app:layout_constraintTop_toTopOf="@id/fundal"
+                app:layout_constraintBottom_toBottomOf="@id/fundal"
+                app:layout_constraintStart_toStartOf="@id/fundal"
+                app:layout_constraintEnd_toEndOf="@id/fundal"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/recipeIngredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aladin"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+
+                android:text="@string/_500_gr_cartofi_n300_gr_dovlecei_2_dovlecei_n300_gr_morcovi_2_morcovi_npatrunjel_nulei_nsare_si_piper_dupa_gust"
+                android:textColor="#2E2D2D"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@id/recipeSteps"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+
+                app:layout_constraintStart_toEndOf="@id/imageMic"
+                app:layout_constraintTop_toBottomOf="@id/stea3"
+                app:layout_constraintVertical_bias="0.088" />
+
+            <ImageView
+                android:id="@+id/fig1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="40dp"
+                android:paddingTop="10dp"
+                android:rotation="50"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recipeIngredients"
+                app:srcCompat="@drawable/morcov2" />
+
+            <TextView
+                android:id="@+id/recipeSteps"
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:fontFamily="@font/aladin"
+                android:paddingTop="20dp"
+                android:text="     Se taie legumele, se condimenteaza bine, se pun in cuptor si se lasa la facut 40 de minute la 160°"
+                android:textColor="#2E2D2D"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/fig1"
+                app:layout_constraintHorizontal_bias="0.42"
+                app:layout_constraintStart_toEndOf="@+id/fig2"
+                app:layout_constraintTop_toBottomOf="@+id/imageMic" />
+
+            <ImageView
+                android:id="@+id/fig2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                app:layout_constraintBottom_toTopOf="@id/fig3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageMic"
+
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/morcov1" />
+
+            <ImageView
+                android:id="@+id/fig3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/morcov2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_homeREC1"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/button_homeREC1"
+        app:layout_constraintEnd_toEndOf="@id/button_homeREC1"
+        app:layout_constraintStart_toStartOf="@id/button_homeREC1"
+        app:layout_constraintTop_toTopOf="@id/button_homeREC1"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

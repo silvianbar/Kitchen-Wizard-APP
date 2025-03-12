@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kitchenactivity.Activity.IntroActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="1102dp"
+        android:layout_height="888dp"
+        android:src="@drawable/portocaliu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="485dp"
+        android:layout_height="434dp"
+        android:layout_marginBottom="250dp"
+        android:src="@drawable/rata"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="348dp"
+        android:layout_height="113dp"
+        android:text="Kitchen Wizard"
+        android:textColor="#FFFFFF"
+        android:textSize="51sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="349dp"
+        android:layout_height="110dp"
+        android:text="Kitchen Wizard"
+        android:textColor="#512406"
+        android:textSize="51sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/startBTN"
+        android:layout_width="309dp"
+        android:layout_height="68dp"
+
+        android:background="@drawable/portocaliu2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/idtextview33"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Get started"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

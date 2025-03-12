@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">KitchenWizard2</string>
+    <string name="find_your_recipe">Find your recipe</string>
+    <string name="todo">TODO</string>
+    <string name="home">home</string>
+    <string name="stay_at">stay at</string>
+    <string name="make_your_own_food">Make your own food,</string>
+    <string name="hi_lola">Hi, Lola</string>
+    <string name="search_button">search_button</string>
+    <string name="idpicture">idpicture</string>
+    <string name="id_picture">id_picture</string>
+    <string name="what_are_you_cooking_today">What are you cooking today</string>
+    <string name="categories">Categories</string>
+    <string name="Home_but">HOME</string>
+    <string name="HOME_BUT">HOME</string>
+    <string name="legume_la_cuptor">Legume la cuptor</string>
+    <string name="_500_gr_cartofi_n300_gr_dovlecei_2_dovlecei_n300_gr_morcovi_2_morcovi_npatrunjel_nulei_nsare_si_piper_dupa_gust">500 gr cartofi \n300 gr dovlecei(2 dovlecei)\n300 gr morcovi(2 morcovi)\npatrunjel\nulei\nsare si piper dupa gust</string>
+    <string name="recipes">Recipes</string>
+    <string name="heiii">HEIII</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="swipe_left_for_register">Swipe Left for Register</string>
+    <string name="login">Login</string>
+    <string name="tag">Enjoy your favorite recipes</string>
+    <string name="e_mail" >Email</string>
+    <string name="password">Password </string>
+    <string name="swipe_right_for_login" > Swipe Right for Register</string>
+    <string name="register" >Register</string>
+    <string name="re_type_password" >Re-type Password</string>
+    <string name="your_name" >Full Name</string>
+    <string name="login1">Login</string>
+    <string name="arrow_right">Arrow right</string>
+    <string name="imagine_reteta">Imagine_reteta</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="recipe_name">Recipe Name</string>
+</resources>
